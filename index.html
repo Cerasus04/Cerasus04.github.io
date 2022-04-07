@@ -28,7 +28,7 @@
     <meta name="msapplication-TileImage" content="/favicon-144.png">
     <meta name="msapplication-config" content="/browserconfig.xml">
   <link href="css/app.css" rel="stylesheet"></head>
-  <body class="page">
+  <body class="base page">
     <header class="header">
       <div class="section_in">
         <div class="header__top">
@@ -41,12 +41,12 @@
                 <use xlink:href="images/sprite/sprite.svg#search"></use>
               </svg>
             </button>
-            <button class="header__burger_btn" aria-label="Menu open" type="button">
+            <button class="header__burger_btn headerBurgerBtn" aria-label="Menu open" type="button">
               <svg class="icon icon_burger ">
                 <use xlink:href="images/sprite/sprite.svg#burger"></use>
               </svg>
             </button>
-            <button class="header__close_btn" aria-label="Menu close" type="button">
+            <button class="header__close_btn headerCloseBtn" aria-label="Menu close" type="button">
               <svg class="icon icon_close ">
                 <use xlink:href="images/sprite/sprite.svg#close"></use>
               </svg>
@@ -91,9 +91,9 @@
           <h1 class="slider__title">AIDSinfo</h1>
           <p class="slider__descr">UNAIDS leads the world’s most extensive data collection on HIV epidemiology, programme coverage and finance and publishes the most authoritative and up-to-date information on the HIV epidemic.</p>
         </div>
-        <ul class="slider_section accordion">
-          <li class="slider_section__item accordion__tab">
-            <div class="slider_section__slide accordion__button">
+        <ul class="slider_section sliderList">
+          <li class="slider_section__item sliderItem">
+            <div class="slider_section__slide">
               <picture>
                 <source srcset="images/slide1.png.webp" type="image/webp">
                 <source srcset="images/slide1.png" type="image/png"><img class="slider_section__img" src="images/slide1.png" alt="">
@@ -107,8 +107,8 @@
               </div>
             </div>
           </li>
-          <li class="slider_section__item accordion__tab">
-            <div class="slider_section__slide accordion__button">
+          <li class="slider_section__item sliderItem">
+            <div class="slider_section__slide">
               <picture>
                 <source srcset="images/slide2.png.webp" type="image/webp">
                 <source srcset="images/slide2.png" type="image/png"><img class="slider_section__img" src="images/slide2.png" alt="">
@@ -122,8 +122,8 @@
               </div>
             </div>
           </li>
-          <li class="slider_section__item accordion__tab">
-            <div class="slider_section__slide accordion__button">
+          <li class="slider_section__item sliderItem">
+            <div class="slider_section__slide">
               <picture>
                 <source srcset="images/slide3.png.webp" type="image/webp">
                 <source srcset="images/slide3.png" type="image/png"><img class="slider_section__img" src="images/slide3.png" alt="">
@@ -137,8 +137,8 @@
               </div>
             </div>
           </li>
-          <li class="slider_section__item accordion__tab">
-            <div class="slider_section__slide accordion__button">
+          <li class="slider_section__item sliderItem">
+            <div class="slider_section__slide">
               <picture>
                 <source srcset="images/slide4.png.webp" type="image/webp">
                 <source srcset="images/slide4.png" type="image/png"><img class="slider_section__img" src="images/slide4.png" alt="">
@@ -152,8 +152,8 @@
               </div>
             </div>
           </li>
-          <li class="slider_section__item accordion__tab">
-            <div class="slider_section__slide accordion__button">
+          <li class="slider_section__item sliderItem">
+            <div class="slider_section__slide">
               <picture>
                 <source srcset="images/slide5.png.webp" type="image/webp">
                 <source srcset="images/slide5.png" type="image/png"><img class="slider_section__img" src="images/slide5.png" alt="">
@@ -168,23 +168,7 @@
             </div>
           </li>
         </ul>
-        <ul class="controls_list">
-          <li class="controls_list__item">
-            <button class="controls_list__btn current" id="1" aria-label="slide button"></button>
-          </li>
-          <li class="controls_list__item">
-            <button class="controls_list__btn" id="2" aria-label="slide button"></button>
-          </li>
-          <li class="controls_list__item">
-            <button class="controls_list__btn" id="3" aria-label="slide button"></button>
-          </li>
-          <li class="controls_list__item">
-            <button class="controls_list__btn" id="4" aria-label="slide button"></button>
-          </li>
-          <li class="controls_list__item">
-            <button class="controls_list__btn" id="5" aria-label="slide button"></button>
-          </li>
-        </ul>
+        <div class="section__pagination swiper-pagination"></div>
       </section>
       <section class="section info_block">
         <h2 class="visually-hidden">Information</h2>
@@ -211,11 +195,14 @@
             <h3 class="info_block__subtitle">popular searches</h3>
             <div class="info_block__links">
               <ul class="link_list link_list--info">
-                <li class="list_link__item"><a class="link_list__link">HIV prevalence among sex workers <span>Eastern and Souther Africa</span></a></li>
-                <li class="list_link__item"><a class="link_list__link">Budget for HIV and AIDS programmes from domestic public sources <span>Global</span></a></li>
-                <li class="list_link__item"><a class="link_list__link">Elimination of mother-to-child transmission <span>Asia & Pacific</span></a></li>
+                <li class="list_link__item"><a class="link_list__link" href="#">HIV prevalence among sex workers <span>Eastern and Souther Africa</span></a></li>
+                <li class="list_link__item"><a class="link_list__link" href="#">Budget for HIV and AIDS programmes from domestic public sources <span>Global</span></a></li>
+                <li class="list_link__item"><a class="link_list__link" href="#">Elimination of mother-to-child transmission <span>Asia & Pacific</span></a></li>
+                <li class="list_link__item"><a class="link_list__link" href="#">HIV prevalence among sex workers <span>Eastern and Souther Africa</span></a></li>
+                <li class="list_link__item"><a class="link_list__link" href="#">Budget for HIV and AIDS programmes from domestic public sources <span>Global</span></a></li>
+                <li class="list_link__item"><a class="link_list__link" href="#">Elimination of mother-to-child transmission <span>Asia & Pacific</span></a></li>
               </ul>
-            </div><a class="info_block__link" href="#">view more				</a>
+            </div><a class="info_block__link infoLink">view more				</a>
           </div>
         </div>
       </section>
@@ -305,9 +292,9 @@
           </ul>
           <div class="footer__violations">
             <ul class="link_list link_list--footer">
-              <li class="list_link__item"><a class="link_list__link">Report fraud</a></li>
-              <li class="list_link__item"><a class="link_list__link">Scam alert</a></li>
-              <li class="list_link__item"><a class="link_list__link">Terms of use</a></li>
+              <li class="list_link__item"><a class="link_list__link" href="#">Report fraud</a></li>
+              <li class="list_link__item"><a class="link_list__link" href="#">Scam alert</a></li>
+              <li class="list_link__item"><a class="link_list__link" href="#">Terms of use</a></li>
             </ul>
           </div>
         </div>
