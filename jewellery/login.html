@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Jewellery">
+  <title>Jewellery catalog</title>
+  <link rel="preload" href="fonts/poppins-v15-latin-500.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-700.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-600.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="page page--nojs">
+  <header class="page__header header header--nojs">
+    <div class="header__container header__container--nojs">
+      <div class="header__top">
+        <form action="https://echo.htmlacademy.ru" class="header__search" method="POST">
+          <label for="search">
+            <svg width="14" height="14">
+              <use href="img/sprite.svg#icon-search"></use>
+            </svg>
+            <span class="visually-hidden">Site search</span>
+          </label>
+          <input type="search" id="search" name="search" placeholder="Type here to search">
+        </form>
+        <button class="header__burger-btn" aria-label="Menu">
+          <svg width="25" height="18">
+            <use href="img/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <div class="header__logo">
+          <a href="main.html" aria-label="Logo Jewellery" id="top">
+            <svg width="66" height="66">
+              <use href="img/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="header__user-menu user-menu">
+          <a class="user-menu__modal-login" href="login.html" aria-label="Enter modal-login">Login
+          </a>
+          <a class="user-menu__cart" href="#">
+            <svg class="user-menu__icon" width="20" height="18">
+              <use href="img/sprite.svg#icon-cart"></use>
+            </svg>
+            <p>Cart <span>0</span></p>
+          </a>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <nav class="header__nav" id="menu">
+          <ul class="header__nav-list nav-list">
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">What’s new</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="catalog.html" class="nav-list__link">Chokers</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">Necklaces</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">Rings</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">Earrings</a>
+            </li>
+          </ul>
+          <ul class="header__sub-nav sub-list">
+            <li class="sub-list__item">
+              <a href="#" class="sub-list__link">About CH</a>
+            </li>
+            <li class="sub-list__item">
+              <a href="#" class="sub-list__link">Stores & Hours</a>
+            </li>
+            <li class="sub-list__item">
+              <a href="#" class="sub-list__link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__login" href="login.html" aria-label="Enter modal-login">Login
+        </a>
+      </div>
+    </div>
+  </header>
+  <main class="page__main main main--login">
+    <div class="modal-login modal-nojs" tabindex="0" id="login">
+      <h2>Log In</h2>
+      <form class="modal-login__form" action="https://echo.htmlacademy.ru" method="POST" id="login-form">
+        <div class="modal-login__container">
+          <div class="modal-login__field">
+            <input type="email" name="login-email" id="login-email" placeholder="Your E-mail" required="">
+            <label class="visually-hidden" for="login-email">
+              Enter your E-mail
+            </label>
+          </div>
+          <div class="modal-login__field">
+            <input type="password" name="login-password" id="login-password" placeholder="Password" required="">
+            <label class="visually-hidden" for="login-password">
+              Enter your password
+            </label>
+            <a href="#">Forgot your password?</a>
+          </div>
+          <button class="modal-login__button" type="submit">Log In</button>
+          <p>
+            <span>Don’t have an account?</span>
+            <a href="#">Sign up</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer class="page__footer footer">
+    <div class="footer__container">
+      <section class="footer__sign-up">
+        <h2>The good stuff in your inbox</h2>
+        <p>News and updates from CH. No spam, we promise.</p>
+        <form action="https://echo.htmlacademy.ru" class="footer__form form-footer" method="POST">
+          <div class="form-footer__container">
+            <label for="sign-up" class="visually-hidden">Enter your email</label>
+            <input type="email" id="sign-up" placeholder="Your E-mail" required="">
+            <button class="form-footer__button" type="submit">
+              <span>Sign Up</span>
+              <svg width="30" height="11" aria-hidden="true">
+                <use href="img/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </section>
+      <section class="footer__nav footer-nav">
+        <h2 class="visually-hidden">footer links</h2>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Ordering & Payment</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Terms & Conditions</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Returns & Exchanges</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Delivery</a>
+          </li>
+        </ul>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">About CH</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Stores & Hours</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Jobs</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Contact Us</a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer__socials footer-social">
+        <h2 class="visually-hidden">You can find us in the following social networks</h2>
+        <ul class="footer-social__list">
+          <li class="footer-social__item">
+            <a href="#" class="footer-social__link">
+              <svg width="8" height="15">
+                <use href="./img/sprite.svg#icon-fb"></use>
+              </svg>
+              <p>Facebook</p>
+            </a>
+          </li>
+          <li class="footer-social__item">
+            <a href="#" class="footer-social__link">
+              <svg width="15" height="15">
+                <use href="./img/sprite.svg#icon-inst"></use>
+              </svg>
+              <p>Instagram</p>
+            </a>
+          </li>
+          <li class="footer-social__item">
+            <a href="#" class="footer-social__link">
+              <svg width="16" height="15">
+                <use href="./img/sprite.svg#icon-pint"></use>
+              </svg>
+              <p>Pinterest</p>
+            </a>
+          </li>
+          <li class="footer-social__item">
+            <a href="#" class="footer-social__link">
+              <svg width="15" height="13">
+                <use href="./img/sprite.svg#icon-tw"></use>
+              </svg>
+              <p>Twitter</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
