@@ -693,11 +693,7 @@ body
 	margin-bottom: 12px;
 	width: 75%;	
 }
-.main .about-me .cv__block-button {
-	position: absolute;
-	bottom: 5px;
-	right: 0;
-}
+
 .main .about-me .cv__link
 {
 	display: inline-block;
@@ -1711,14 +1707,25 @@ body
 		display: none;
 	}
 }
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+
 .accordion__tab {
   position: relative;}
-
 
 .accordion__button {
   display: none;
   padding: 50px 47px 50px 0;
-  bottom: 0; } */
+  bottom: 0; }
 .accordion--js .accordion__tab:not(.accordion__tab--open) {
   padding-bottom: 48px; }
   @media (max-width: 767px) {
@@ -1749,8 +1756,10 @@ body
       padding-right: 52px; } }
   @media (max-width: 767px) {
     .accordion--js .accordion__button {
-      padding-top: 25px;
-      padding-right: 25px; 
+      /* padding-top: 25px;
+      padding-right: 25px;  */
+			padding-top: 75px;
+      padding-right: 0; 
     } 
   }
   
@@ -1758,29 +1767,31 @@ body
   display: none; }
 
 .accordion__tab--open .skills-content {
-  display: block; }
+  display: block;
+	margin-top: 20px; }
 
-/* .accordion__icon--close {
-  display: none; }
+	.accordion__icon--close {
+		display: none; }
+	
+	.accordion__tab--open .accordion__icon--open {
+		display: none; }
+	
+	.accordion__tab--open .accordion__icon--close {
+		display: block; }
+	
+	.accordion__button svg {
+		color: black;
+		pointer-events: none;
+		fill: transparent; }
+		@media (max-width: 1023px) {
+			.accordion__button svg {
+				-webkit-transform: scale(1.5);
+								transform: scale(1.5); } }
+		@media (max-width: 767px) {
+			.accordion__button svg {
+				-webkit-transform: scale(1.3);
+								transform: scale(1.3); } }
 
-  .accordion__tab--open .accordion__icon--open {
-    display: none; }
-  
-  .accordion__tab--open .accordion__icon--close {
-    display: block; } */
-
-		.accordion__button {
-			outline: 2px solid red;
-		}    
-.accordion__button svg {
-  color: #a87b62;
-  pointer-events: none;
-  fill: transparent; }
-  @media (max-width: 1023px) {
-    .accordion__button svg {
-      -webkit-transform: scale(1.5);
-              transform: scale(1.5); } }
-  @media (max-width: 767px) {
-    .accordion__button svg {
-      -webkit-transform: scale(1.3);
-              transform: scale(1.3); } }
+/* .accordion__button {
+	outline: 2px solid red;
+}     */
