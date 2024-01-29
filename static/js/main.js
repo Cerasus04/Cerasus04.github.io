@@ -1,36 +1,3 @@
-// $(function () {
-
-// // tab
-// const tab = function () {
-//   let tabNav = document.querySelectorAll('.tabs-nav__item'),
-//       tabContent = document.querySelectorAll('.tab'),
-//       tabName;
-
-//   tabNav.forEach(item => {
-//       item.addEventListener('click', selectTabNav);
-//   })
-
-//   function selectTabNav() {
-//       tabNav.forEach(item => {
-//           item.classList.remove('is-active');
-//       });
-//       this.classList.add('is-active');
-
-//       tabName = this.getAttribute('data-tab-name');
-//       selectTabContent(tabName);
-//   }
-
-//   function selectTabContent(tabName) {
-//       tabContent.forEach(item => {
-//           item.classList.contains(tabName) ? item.classList.add('is-active') : item.classList.remove('is-active');
-//       })
-//   }
-// };
-
-// tab();
-
-// modal in portfolio
-
 const modal = function () {
   let btnPortfolio = document.querySelectorAll('.portfolio__link-btn'),
       closeBtnPortfolio = document.querySelectorAll('.close'),
@@ -127,19 +94,6 @@ const burgerMenu = function () {
 
 burgerMenu();
 
-// print 
-// const print = function () {
-//   let printBtn = document.querySelector('.action-print');
-
-//   printBtn.addEventListener('click', () => {
-//       window.print();
-//       return false;
-//   });
-// }
-
-// print();
-
-// });
 const accordion = () => {
     const accordion = document.querySelector('.accordion');
     if (accordion) {
@@ -164,7 +118,6 @@ const accordion = () => {
         }
       });
     }
-    console.log('ya');
   }
   
   accordion();
