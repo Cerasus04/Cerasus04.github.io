@@ -551,6 +551,7 @@ body {
     color: #222222;
     font-weight: 600;
     margin-bottom: 7px;
+    font-size: 20px;
 }
 .about-me .cv__block-subtitle {
     color: #a5a5a5;
@@ -586,7 +587,7 @@ body {
     padding-left: 20px;
 }
 .about-me .skills__list-item {
-    font-size: 13px;
+    font-size: 18px;
     padding: 2px 0;
 }
 .about-me .skills .skill {
